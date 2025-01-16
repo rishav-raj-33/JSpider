@@ -1,0 +1,234 @@
+Recursion Mastery:-
+-------------------
+
+
+Display Output codes:-
+=======================
+
+
+Easy Level:-
+-----------
+
+
+ class MysteryProgram1 {
+    public static void mysteryFunction(int n) {
+        if (n <= 0) {
+            return;
+        }
+        System.out.println(n);
+        mysteryFunction(n - 1);
+    }
+
+    public static void main(String[] args) {
+        mysteryFunction(5);
+    }
+}
+
+
+
++++++++++++
+
+public class MysteryProgram2 {
+    public static void mysteryFunction(int n) {
+        if (n <= 0) {
+            return;
+        }
+        mysteryFunction(n - 1);
+        System.out.println(n);
+    }
+
+    public static void main(String[] args) {
+        mysteryFunction(5);
+    }
+}
+
+
+++++++++++++
+
+
+Medium Level: -
+-------------
+
+
+public class MysteryProgram3 {
+    public static void mysteryFunction(int n) {
+        if (n <= 0) {
+            return;
+        }
+        mysteryFunction(n - 1);
+        System.out.println(n);
+        mysteryFunction(n - 2);
+    }
+
+    public static void main(String[] args) {
+        mysteryFunction(4);
+    }
+}
+
+
++++++++++++
+
+public class MysteryProgram4 {
+    public static void mysteryFunction(int n) {
+        if (n <= 0) {
+            return;
+        }
+        mysteryFunction(n - 2);
+        System.out.println(n);
+        mysteryFunction(n - 1);
+    }
+
+    public static void main(String[] args) {
+        mysteryFunction(4);
+    }
+}
+
+
++++++++++
+
+Hard Level:-
+----------
+
+
+
+public class MysteryProgram5 {
+    public static void mysteryFunction(int n) {
+        if (n <= 0) {
+            return;
+        }
+        mysteryFunction(n - 2);
+        System.out.println(n);
+        mysteryFunction(n - 1);
+    }
+
+    public static void main(String[] args) {
+        mysteryFunction(4);
+    }
+}
+
+
+
+Guess Output codes:-
+------------------
+
+Medim level:-
+-------------
+
+public class MysteryProgram1 {
+    public static int mysteryFunction(int n) {
+        if (n <= 0) {
+            return 1;
+        }
+        return n * mysteryFunction(n - 2);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mysteryFunction(5));
+    }
+}
+
+
++++++++++++
+
+
+
+public class MysteryProgram2 {
+    public static int mysteryFunction(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        return n + mysteryFunction(n - 3);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mysteryFunction(6));
+    }
+}
+
+
+
+++++++++++++++
+
+
+public class MysteryProgram3 {
+    public static int mysteryFunction(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        return n + mysteryFunction(n / 2);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mysteryFunction(8));
+    }
+}
+
+
++++++++++++
+
+
+Hard Level:-
+-----------
+
+
+public class MysteryProgram1 {
+    public static int mysteryFunction(int n) {
+        if (n <= 0) {
+            return 1;
+        }
+        return (n * mysteryFunction(n - 3)) + mysteryFunction(n - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mysteryFunction(6));
+    }
+}
+
+
+++++++++++++
+
+
+public class MysteryProgram2 {
+    public static int mysteryFunction(int n) {
+        if (n <= 0) {
+            return 2;
+        }
+        return (n * mysteryFunction(n - 4)) + mysteryFunction(n - 2);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mysteryFunction(8));
+    }
+}
+
+
+++++++++++++++
+
+
+public class MysteryProgram3 {
+    public static int mysteryFunction(int n) {
+        if (n <= 0) {
+            return 1;
+        }
+        return (n * mysteryFunction(n - 2)) + mysteryFunction(n - 3);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mysteryFunction(7));
+    }
+}
+
+
+++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
