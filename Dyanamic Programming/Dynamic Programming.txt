@@ -1,0 +1,13 @@
+Dynamic Programming:-
+===================
+
+
+Quote:- Those who forgot the past, are condemned to repeat it.
+
+
+->Top Down Approach----- Recursion + Memorization (store the value of sub-problems in map/table)
+
+->Bottom up ------ Tabulation 
+
+=>Then Space Optimization
+
